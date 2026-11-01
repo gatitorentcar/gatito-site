@@ -226,6 +226,7 @@
     <ul class="navlinks">
       <li><a href="#fleet" data-i18n="nav_fleet">Notre flotte</a></li>
       <li><a href="#about" data-i18n="nav_about">À propos</a></li>
+      <li><a href="#reviews" data-i18n="nav_reviews">Avis</a></li>
       <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
     </ul>
     <div class="nav-controls">
@@ -243,17 +244,6 @@
           <button class="dropdown-option" data-value="de" onclick="selectLang('de')"><span class="code">DE</span><span class="name">Deutsch</span><svg class="check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></button>
           <button class="dropdown-option" data-value="nl" onclick="selectLang('nl')"><span class="code">NL</span><span class="name">Nederlands</span><svg class="check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></button>
           <button class="dropdown-option" data-value="ar" onclick="selectLang('ar')"><span class="code">AR</span><span class="name">العربية</span><svg class="check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></button>
-        </div>
-      </div>
-      <div class="dropdown-widget" id="curWidget">
-        <button class="dropdown-toggle" onclick="toggleDropdown('curWidget')" aria-haspopup="listbox" aria-label="Devise">
-          <span id="curCodeLabel">MAD</span>
-          <svg class="chev" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg>
-        </button>
-        <div class="dropdown-menu" id="curMenu" role="listbox">
-          <button class="dropdown-option active" data-value="MAD" onclick="selectCurrency('MAD')"><span class="code">DH</span><span class="name">Dirham (MAD)</span><svg class="check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></button>
-          <button class="dropdown-option" data-value="EUR" onclick="selectCurrency('EUR')"><span class="code">€</span><span class="name">Euro (EUR)</span><svg class="check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></button>
-          <button class="dropdown-option" data-value="USD" onclick="selectCurrency('USD')"><span class="code">$</span><span class="name">Dollar (USD)</span><svg class="check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></button>
         </div>
       </div>
     </div>
@@ -409,6 +399,47 @@
          streetway : Alexander Migl, CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:2023_Dacia_Sandero_III_1X7A6192.jpg
          logan : Alexander-93, CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:2023_Dacia_Logan_III_IMG_9678_(cropped).jpg
     -->
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="reviews_eyebrow">Avis clients</span>
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:8px 0 8px;">
+      <h2 style="margin:0;" data-i18n="reviews_title">Ce que disent nos locataires.</h2>
+      <a id="reviewsLink" href="https://www.google.com/maps/place/GATITO+Car/@35.7614606,-5.7594375,17z/data=!4m8!3m7!1s0xd0b816e38c4b1d5:0x67ecf4f6147441a0!8m2!3d35.7614606!4d-5.7594375!9m1!1b1!16s%2Fg%2F11wmtbysgz?entry=ttu" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:700;color:#fff;text-decoration:none;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#F5B301"><path d="M12 2l2.9 6.6L22 9.3l-5 4.9 1.2 7-6.2-3.5L5.8 21.2 7 14.2 2 9.3l7.1-.7z"/></svg>
+        5,0 · 476 <span data-i18n="reviews_on_google">avis Google</span>
+      </a>
+    </div>
+    <p style="max-width:520px;color:rgba(238,243,241,0.65);font-size:13.5px;margin:0 0 30px;" data-i18n="reviews_subtitle">Une sélection d'avis authentiques laissés par nos clients sur notre fiche Google.</p>
+    <div class="rev-grid">
+      <div class="rev-card">
+        <div style="color:#F5B301;font-size:13px;margin-bottom:8px;">★★★★★</div>
+        <p data-i18n="rev5">…</p>
+        <div class="rev-name">Abdlah H.</div><div class="rev-loc" data-i18n="rev_google">Avis Google</div>
+      </div>
+      <div class="rev-card">
+        <div style="color:#F5B301;font-size:13px;margin-bottom:8px;">★★★★★</div>
+        <p data-i18n="rev6">…</p>
+        <div class="rev-name">Anissa E.</div><div class="rev-loc" data-i18n="rev_google">Avis Google</div>
+      </div>
+      <div class="rev-card">
+        <div style="color:#F5B301;font-size:13px;margin-bottom:8px;">★★★★★</div>
+        <p data-i18n="rev7">…</p>
+        <div class="rev-name">Sam B.</div><div class="rev-loc" data-i18n="rev_google">Avis Google</div>
+      </div>
+      <div class="rev-card">
+        <div style="color:#F5B301;font-size:13px;margin-bottom:8px;">★★★★★</div>
+        <p data-i18n="rev8">…</p>
+        <div class="rev-name">Assia S.</div><div class="rev-loc" data-i18n="rev_google">Avis Google</div>
+      </div>
+      <div class="rev-card">
+        <div style="color:#F5B301;font-size:13px;margin-bottom:8px;">★★★★★</div>
+        <p data-i18n="rev9">…</p>
+        <div class="rev-name">Yassine L.</div><div class="rev-loc" data-i18n="rev_google">Avis Google</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -704,15 +735,6 @@ function selectLang(lang){
   document.getElementById('langWidget').classList.remove('open');
 }
 
-function selectCurrency(cur){
-  currentCurrency = cur;
-  document.getElementById('curCodeLabel').textContent = cur;
-  document.querySelectorAll('#curMenu .dropdown-option').forEach(opt=>{
-    opt.classList.toggle('active', opt.getAttribute('data-value') === cur);
-  });
-  applyCurrency(cur);
-  document.getElementById('curWidget').classList.remove('open');
-}
 
 Object.assign(translations.fr, {"fleet_title": "14 modèles, du citadin au SUV.", "fleet_note": "Prix et disponibilité confirmés sur WhatsApp. Photos d'illustration : le modèle livré peut différer légèrement.", "f_all": "Tous", "f_auto": "Automatique", "f_manual": "Manuelle", "f_diesel": "Diesel", "f_petrol": "Essence", "f_hybrid": "Hybride", "spec_petrol": "Essence", "spec_hybrid": "Hybride", "col_white": "Blanc", "col_grey": "Gris", "col_black": "Noir", "col_blue": "Bleu", "col_khaki": "Vert kaki", "price_ask": "Prix sur demande", "from_price": "dès", "label_color": "Couleur", "label_gear": "Boîte & carburant", "wa_hello": "Bonjour GATITO Car, je souhaite réserver :", "wa_name": "Nom", "wa_phone": "Téléphone", "wa_start": "Départ", "wa_end": "Retour", "err_dates": "La date de retour doit être après la date de départ."});
 Object.assign(translations.en, {"fleet_title": "14 models, from city car to SUV.", "fleet_note": "Price and availability confirmed on WhatsApp. Illustrative photos: the delivered car may differ slightly.", "f_all": "All", "f_auto": "Automatic", "f_manual": "Manual", "f_diesel": "Diesel", "f_petrol": "Petrol", "f_hybrid": "Hybrid", "spec_petrol": "Petrol", "spec_hybrid": "Hybrid", "col_white": "White", "col_grey": "Grey", "col_black": "Black", "col_blue": "Blue", "col_khaki": "Khaki green", "price_ask": "Price on request", "from_price": "from", "label_color": "Colour", "label_gear": "Gearbox & fuel", "wa_hello": "Hello GATITO Car, I would like to book:", "wa_name": "Name", "wa_phone": "Phone", "wa_start": "Pick-up", "wa_end": "Drop-off", "err_dates": "The drop-off date must be after the pick-up date."});
@@ -788,10 +810,6 @@ function applyCurrency(cur){
   });
   applyLang(currentLang);
 }
-/* taux du jour (si le réseau répond, sinon on garde les valeurs de secours) */
-fetch('https://open.er-api.com/v6/latest/MAD').then(r=>r.json()).then(d=>{
-  if(d && d.rates && d.rates.EUR && d.rates.USD){ rates.EUR = d.rates.EUR; rates.USD = d.rates.USD; applyCurrency(currentCurrency); }
-}).catch(()=>{});
 
 /* ---------------- Flotte ---------------- */
 function matchesFilter(c){
